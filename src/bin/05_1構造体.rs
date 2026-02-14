@@ -61,6 +61,20 @@ fn main() {
 
     //user1のヒープ領域を使用するフィールド（username）などから所有権をムーブしているため、user1はそのまま使えなくなる。
     
-    
+    //タプル構造体
+    struct Color(i32, i32, i32);//フィールド名がなく、型だけを定義
+    struct Point(i32, i32, i32);
+
+    fn _tup_struct() {
+        let _black = Color(0, 0, 0);
+        let _origin = Point(0, 0, 0);
+    }
+
+    //ユニット様構造体
+    struct AlwaysEqual;//()や{}は不要
+
+    fn _unit_struct(){
+        let _subject = AlwaysEqual;
+    }
 
 }
