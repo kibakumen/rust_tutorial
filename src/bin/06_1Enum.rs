@@ -88,7 +88,7 @@ fn main(){
 
     //None値を見ただけでは、それに対応するSome列挙子が保持する型をコンパイラは推論できない
     //そのため、コンパイラはジェネリクス適用後のOption型を注釈することを要求する
-    let absent_number: Option<i32> = None;
+    // let absent_number: Option<i32> = None
         
 
 }
