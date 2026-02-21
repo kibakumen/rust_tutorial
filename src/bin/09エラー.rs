@@ -19,7 +19,7 @@ fn main(){
     
     //戻り値がResultな関数の使用
     use std::fs::File;
-    let greeting_file_result = File::open("hello.txt") //File::openはResult<T, E>を返す
+    let greeting_file_result = File::open("hello.txt"); //File::openはResult<T, E>を返す
 
     //返される三つの情報
         //成功したか失敗したか
